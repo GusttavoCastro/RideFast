@@ -1,0 +1,231 @@
+body {
+    background-color: #161414;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #D69A27;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 24, 28);
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    height: 96px;
+    background: #161414;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Left Options */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    padding: 14px 16px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #DAD5D5;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+
+
+/* MAIN */
+.box-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    top: 200px;
+    width: 897px;
+    height: 318px;
+    left: calc(50% - 897px/2 + 0.5px);
+    z-index: 1;
+}
+
+.box-txt h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.box-txt p {
+    width: 897px;
+    height: 250px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 156% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+
+#img-sobre {
+    position: absolute;
+    right: 0px;
+    top: 410px;
+    z-index: 1;
+}
+
+
+
+#retangulo {
+    position: absolute;
+    width: 755px;
+    height: 775.83px;
+    left: 1050px;
+    top: 110px;
+
+    background: linear-gradient(180deg, rgba(74, 64, 19, 0.63) 0%, rgba(240, 196, 1, 0.59) 100%);
+    border-radius: 45.5737px;
+    transform: rotate(46.33deg);
+}
+
+/* FOOTER */
+footer {
+    /* FOOTER POSITION */
+    display: flex;
+    height: 280px;
+    position: absolute;
+    top: 810px;
+    z-index: 1;
+    background: #131618;
+}
+
+#container-footer {
+    width: 100%;
+    padding: 0px;
+}
+
+.part-1 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 20px;
+    position: absolute;
+    left: 51px;
+}
+
+.part-1 h2 {
+    font-family: 'Clinton';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #F1F1F1;
+}
+
+.part-1 a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    width: auto;
+    letter-spacing: 0.24px;
+
+    color: #F1F1F1;
+
+}
+
+.part-1 a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#container-footer img {
+    position: absolute;
+    right: 70px;
+    margin-top: 20px;
+}
+
+/* PARTE DE BAIXO DO FOOTER */
+.part-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 220px;
+
+    width: 1512px;
+    height: 60px;
+
+    background: #000000;
+}
+
+.part-2 article {
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+
+    position: absolute;
+    left: 470px;
+    top: 20px;
+}
+
+.part-2 span {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+    line-height: 18px;
+
+    color: #F1F1F1;
+}

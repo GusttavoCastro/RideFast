@@ -1,0 +1,867 @@
+body {
+    background-color: #161414;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Clinton';
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #D69A27;       /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 24, 28);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+  }
+
+header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    bottom: 340px;
+}
+
+nav {
+    position: relative;
+    bottom: 670px;
+    height: 96px;
+    border-top: 1px solid #ddd4d478;
+}
+
+/* Left Options */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    padding: 14px 16px;
+    padding-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #DAD5D5;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#perfil {
+    position: relative;
+    left: 790px;
+    right: 0px;
+    transition: 0.5s;
+}
+
+#perfil:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.menu {
+    position: relative;
+    left: 880px;
+    bottom: 46px;
+    list-style: none;
+    font-size: 12px;
+    margin: 0;
+    padding-right: 30px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* SUBMENU */
+.menu li ul {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #2d2828;
+    border-radius: 10px;
+    display: none;
+    margin: 0;
+    padding-left: 15px;
+    width: 360px;
+    height: 420px;
+    z-index: 10;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+}
+
+.container-not {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 5px;
+    gap: 8px;
+
+    width: 290px;
+    height: 75px;
+
+    /* stoke */
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(197, 173, 173, 0.23);
+}
+
+#img {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://i.ytimg.com/vi/mnEOywN-xGU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCa5v68WmD8_VNxZ7X32Wes6Rw8mw);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img2 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://www.yamaha-racing.com.br/wp-content/uploads/2023/03/Eli-Tomac-7-Arlington-Align-Media.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img3 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://www.mx1.com.br/storage/blog/header/2LU6_mundial-de-hard-enduro-2021-wess-mx1@original.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img4 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://img.redbull.com/images/c_crop,x_679,y_0,h_1467,w_1100/c_fill,w_400,h_540/q_auto:low,f_auto/redbullcom/2022/3/27/in5n3h7gyweektxjnf5z/uci-mtb-dh-world-cup-lourdes-jackson-goldstone);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.container-not h2 {
+    position: absolute;
+    padding-left: 90px;
+    width: 230px;
+    height: 36px;
+    color: white;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    letter-spacing: 1px;
+}
+
+/* MAIN */
+.img-banner {
+    position: absolute;
+    display: flex;
+    top: 240px;
+    height: 855px;
+    width: 1500px;
+}
+
+#foto1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#comentario {
+    position: absolute;
+    font-family: 'clinton';
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+
+}
+
+#foto1:hover #comentario {
+    opacity: 1;
+}
+
+#foto2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 240px;
+}
+
+
+#foto2:hover #comentario {
+    opacity: 1;
+}
+
+#foto3 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 250px;
+}
+
+#foto3:hover #comentario {
+    opacity: 1;
+}
+
+#foto4 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+}
+
+#foto4:hover #comentario {
+    opacity: 1;
+}
+
+/* CARDS DESTAQUES */
+.titles {
+    position: relative;
+    top: 200px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 64px;
+    width: 100%;
+}
+
+.titles h1 {
+    position: absolute;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.24px;
+
+    color: #FFFFFF;
+}
+
+.titles a {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+    text-decoration-line: underline;
+
+    color: #D69A27;
+}
+
+.titles a:hover {
+    color: #D69A27;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    top: 220px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 150px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #161414;
+}
+
+.card {
+    width: 335px;
+    height: 480px;
+    border-radius: 15px;
+    margin: 12px;
+    background: #ffffff;
+}
+
+.card:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.card-img {
+    background-color: aqua;
+    height: 400px;
+    margin-bottom: 12px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-1 {
+    background-image: url('https://img.redbull.com/images/c_crop,w_2560,h_1280,x_0,y_154,f_auto,q_auto/c_scale,w_1200/redbullcom/2022/10/21/cxmox1rsl3m7zeanvart/brandon-semenuk-red-bull-rampage-2022-final');
+}
+
+.img-2 {
+    background-image: url('https://www.mx1.com.br/storage/blog/header/UJDU_eli-tomac-supercross-san-diego-terceira-etapa@original.jpeg');
+}
+
+.img-3 {
+    background-image: url('https://www.tassietrails.org/images/Enduro_World_Series.jpg');
+}
+
+.img-4 {
+    background-image: url('https://static.wixstatic.com/media/035c57_60db9220b83c41f3a9174603e5d40664~mv2.jpg/v1/fit/w_1024,h_683,al_c,q_80,enc_auto/file.jpg');
+}
+
+.card h3,
+span {
+    padding-left: 12px;
+}
+
+.card h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.card span {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+/* CARDS ESPORTES */
+.titles2 {
+    position: relative;
+    top: 170px;
+    padding-left: 40px;
+    padding-bottom: 64px;
+    width: 100%;
+}
+
+.titles2 h1 {
+    position: absolute;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.24px;
+
+    color: #FFFFFF;
+}
+
+.titles2 a {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+    text-decoration-line: underline;
+
+    color: #D69A27;
+}
+
+.titles2 a:hover {
+    color: #D69A27;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 180px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.container2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card2 {
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 12px;
+    background: #a5e90783;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.card2 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+    padding-top: 140px;
+    color: #FFFFFF;
+
+}
+
+.img-5 {
+    background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2021/2/22/zqpp5f0ep3g2cxnbfwdb/uci-world-cup-maribor-hero-art');
+    /* filter: blur(1px); */
+}
+
+.img-6 {
+    background-image: url('https://www.motonline.com.br/noticia/wp-content/uploads/2022/03/JetroSalazar_brasileirodemotocross_7etapa_creditoidariocafe_mundopress_8811-1024x682-1.jpg');
+}
+
+.img-7 {
+    background-image: url('https://motos.espirituracer.com/archivos/2017/11/ducati-multistrada-v4-s-ambience-59-uc207346-high.jpg');
+}
+
+.img-8 {
+    background-image: url('https://mbaction.com/wp-content/uploads/2021/07/Screen-Shot-2021-07-08-at-11.00.05-AM.png');
+}
+
+.img-9 {
+    background-image: url('https://enduro21.com/images/2021/march-2021/portuguese-hard-enduro/phes1-2021.jpeg');
+}
+
+.img-10 {
+    background-image: url('https://www.mtbpro.es/sites/default/files/una_e-bike_como_unica_bici_6.jpg');
+}
+
+/* CARDS GRUPOS */
+.titles3 {
+    position: relative;
+    top: 180px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.titles3 h1 {
+    position: absolute;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.24px;
+
+    color: #FFFFFF;
+}
+
+.titles3 a {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+    text-decoration-line: underline;
+
+    color: #D69A27;
+}
+
+.titles3 a:hover {
+    color: #D69A27;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.container3 {
+    display: flex;
+    position: relative;
+    top: 220px;
+    padding: 30px;
+    padding-bottom: 120px;
+}
+
+.container3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card3 {
+    width: 245px;
+    height: 350.6px;
+    border-radius: 15px;
+    margin: 20px;
+    background: #373434;
+}
+
+.card3 h3,
+p {
+    color: #ffffff;
+    padding-left: 23px;
+}
+
+.card3 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 30px;
+}
+
+.card3 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 23px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+}
+
+.eclipse-1 {
+    background-image: url('/img/Profile-group.jpg');
+}
+
+.eclipse-2 {
+    background-image: url('https://i2.wp.com/motoraid.com.br/wp-content/uploads/2023/01/hard_enduro_european_challenge_logo.jpeg?fit=1200%2C800&ssl=1');
+}
+
+.eclipse-3 {
+    background-image: url('https://img.freepik.com/vetores-premium/design-de-logotipo-de-mascote-de-aventura-moto-cross-trails_1594-300.jpg?w=360');
+}
+
+.eclipse-4 {
+    background-image: url('https://pbs.twimg.com/profile_images/908394348798124032/j6fAq1SX_400x400.jpg');
+}
+
+.eclipse-5 {
+    background-image: url('https://i.pinimg.com/originals/2e/d1/15/2ed115c13891fd913afe5d2f32dfa85f.jpg');
+}
+
+#vector {
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+#group-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 198px;
+    height: 51px;
+    margin-left: 23px;
+    margin-bottom: 17px;
+
+    background: #DEA617;
+    border-radius: 10px;
+}
+
+#group-btn:hover{
+   color: rgb(255, 230, 0);
+   opacity: 0.6;
+   transition: 0.2s;
+}
+
+.card3 a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* EVENTOS */
+.titles4 {
+    position: relative;
+    top: 200px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 94px;
+    width: 100%;
+}
+
+.titles4 h1 {
+    position: absolute;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.24px;
+
+    color: #FFFFFF;
+}
+
+.container4 {
+    display: flex;
+    position: relative;
+    top: 220px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 150px;
+}
+
+.container4 a {
+    text-decoration: none;
+    color: #161414;
+}
+
+.card4 {
+    width: 412px;
+    height: 432px;
+    border-radius: 15px;
+    margin: 12px;
+    background: #373434;
+}
+
+.card4:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.card-img4 {
+    background-color: aqua;
+    height: 250px;
+    margin-bottom: 8px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.event-1 {
+    background-image: url('https://img.redbull.com/images/c_crop,x_0,y_0,h_2989,w_4484/c_fill,w_720,h_462/q_auto,f_auto/redbullcom/2023/2/7/ihwbbgzvdblgqaox0n04/mtbgonzalo-gajdosech-redbullvalparaisocerroabajo');
+}
+
+.event-2 {
+    background-image: url('https://www.showradical.com/wp-content/uploads/2023/01/IMG_9458-1024x683.jpg');
+}
+
+.event-3 {
+    background-image: url('https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2022/05/23/1600/800/990599a0d903e3b818726e39bc049862.jpg?mod=v1_73ee4744f156880b631cdf985d53758a');
+}
+
+.card4 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 12px;
+    color: #FFFFFF;
+}
+
+.card4 span {
+    position: relative;
+    bottom: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+#location {
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+#data {
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff7e;
+}
+
+.card4 h4 {
+    position: absolute;
+    font-style: normal;
+    margin-left: 12px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #B3A8A8;
+}
+
+/* FOOTER */
+footer {
+    /* FOOTER POSITION */
+    display: flex;
+    height: 280px;
+    position: absolute;
+    top: 3900px;
+    background: #131618;
+}
+
+#container-footer {
+    width: 100%;
+    padding: 0px;
+}
+
+.part-1 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 20px;
+    position: absolute;
+    left: 51px;
+}
+
+.part-1 h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #F1F1F1;
+}
+
+.part-1 a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    width: auto;
+    letter-spacing: 0.24px;
+
+    color: #F1F1F1;
+
+}
+
+.part-1 a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#container-footer img {
+    position: absolute;
+    right: 70px;
+    margin-top: 20px;
+}
+
+/* PARTE DE BAIXO DO FOOTER */
+.part-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 220px;
+
+    width: 1512px;
+    height: 60px;
+
+    background: #000000;
+}
+
+.part-2 article {
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+
+    position: absolute;
+    left: 470px;
+    top: 20px;
+}
+
+.part-2 span {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+    line-height: 18px;
+
+    color: #F1F1F1;
+}

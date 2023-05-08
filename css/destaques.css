@@ -1,0 +1,485 @@
+body {
+    background-color: #161414;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Clinton';
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #D69A27;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 24, 28);
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+}
+
+header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 60px;
+}
+
+#logo {
+    font-family: 'FORMULA-A';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 14px;
+    /* identical to box height, or 29% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #D69A27;
+}
+
+nav {
+    position: relative;
+    top: 110px;
+    height: 96px;
+    border-top: 1px solid #ddd4d478;
+}
+
+/* Left Options */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    padding: 14px 16px;
+    padding-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #DAD5D5;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#perfil {
+    position: relative;
+    left: 790px;
+    right: 0px;
+    transition: 0.5s;
+}
+
+#perfil:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.menu {
+    position: relative;
+    left: 880px;
+    bottom: 45px;
+    list-style: none;
+    font-size: 12px;
+    margin: 0;
+    padding-right: 30px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* SUBMENU */
+.menu li ul {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #2d2828;
+    border-radius: 10px;
+    display: none;
+    margin: 0;
+    padding-left: 15px;
+    width: 360px;
+    height: 420px;
+    z-index: 10;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+}
+
+.container-not {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 5px;
+    gap: 8px;
+
+    width: 290px;
+    height: 75px;
+
+    /* stoke */
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(197, 173, 173, 0.23);
+}
+
+#img {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://i.ytimg.com/vi/mnEOywN-xGU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCa5v68WmD8_VNxZ7X32Wes6Rw8mw);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img2 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://www.yamaha-racing.com.br/wp-content/uploads/2023/03/Eli-Tomac-7-Arlington-Align-Media.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img3 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://www.mx1.com.br/storage/blog/header/2LU6_mundial-de-hard-enduro-2021-wess-mx1@original.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img4 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://img.redbull.com/images/c_crop,x_679,y_0,h_1467,w_1100/c_fill,w_400,h_540/q_auto:low,f_auto/redbullcom/2022/3/27/in5n3h7gyweektxjnf5z/uci-mtb-dh-world-cup-lourdes-jackson-goldstone);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.container-not h2 {
+    position: absolute;
+    padding-left: 90px;
+    width: 230px;
+    height: 36px;
+    color: white;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    letter-spacing: 1px;
+}
+
+/* MAIN */
+.container {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1060px;
+    height: 1300px;
+    left: 226px;
+    top: 281px;
+
+    /* stoke */
+    border: 1px solid rgba(197, 173, 173, 0.23);
+    border-radius: 10px;
+}
+
+#tarja {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 434px;
+    gap: 8px;
+
+    position: absolute;
+    width: 1060px;
+    height: 54px;
+    top: -1px;
+
+    /* primary */
+    background: #D69A27;
+    /* stoke */
+    border: 1px solid rgba(197, 173, 173, 0.23);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#tarja h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 14px;
+    /* identical to box height, or 70% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 44px;
+    top: 170px;
+    position: absolute;
+    left: 40px;
+}
+
+.grid a:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.grid a {
+    text-decoration: none;
+    color: #161414;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 988px;
+    height: 244px;
+    border-radius: 15px;
+}
+
+.card-img {
+    background-color: aqua;
+    width: 388px;
+    height: 244px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-1 {
+    background-image: url('https://img.redbull.com/images/c_crop,w_1820,h_910,x_170,y_0,f_auto,q_auto/c_scale,w_1200/redbullcom/2022/1/26/fboslh2tludprzpecvfj/vca-2022');
+}
+
+.img-2 {
+    background-image: url('https://amasupercross.com/wp-content/uploads/2022/03/Pits_Kardy_SX22_A1_1444.jpg');
+}
+
+.img-3 {
+    background-image: url('https://offroadmoto.motosport.com.pt/wp-content/uploads/2020/07/964af6b6-56a8-4ad7-bdb6-536125fc4839-1024x680.jpeg');
+}
+
+.img-4 {
+    background-image: url('https://revistapro.com.br/uploads/images/2021/03/image_750x500_6048aa244a942.jpg');
+}
+
+#texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    bottom: 15px;
+
+    width: 602px;
+    height: 113px;
+}
+
+#texts h3,
+p,
+span {
+    padding-left: 20px;
+}
+
+#texts h3 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#texts p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#texts span {
+    position: relative;
+    top: 160px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.36);
+}
+
+
+/* FOOTER */
+footer {
+    /* FOOTER POSITION */
+    display: flex;
+    height: 280px;
+    position: absolute;
+    top: 1700px;
+    background: #131618;
+}
+
+#container-footer {
+    width: 100%;
+    padding: 0px;
+}
+
+.part-1 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 20px;
+    position: absolute;
+    left: 51px;
+}
+
+.part-1 h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #F1F1F1;
+}
+
+.part-1 a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    width: auto;
+    letter-spacing: 0.24px;
+
+    color: #F1F1F1;
+
+}
+
+.part-1 a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#container-footer img {
+    position: absolute;
+    right: 70px;
+    margin-top: 20px;
+}
+
+/* PARTE DE BAIXO DO FOOTER */
+.part-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 220px;
+
+    width: 1512px;
+    height: 60px;
+
+    background: #000000;
+}
+
+.part-2 article {
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+
+    position: absolute;
+    left: 470px;
+    top: 20px;
+}
+
+.part-2 span {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+    line-height: 18px;
+
+    color: #F1F1F1;
+}

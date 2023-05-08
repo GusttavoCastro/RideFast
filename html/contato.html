@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="icon" type="image/png" href="/img/img-navegador.png" />
+    <title>Fale conosco</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul id="right-options">
+            <li><a href="/html/index.html">INICIO</a></li>
+            <li><a href="/html/destaques.html">DESTAQUES</a></li>
+            <li><a href="/html/grupos.html">GRUPOS</a></li>
+            <li><a href="/html/fotos.html">GALERIA DE FOTOS</a></li>
+
+
+            <section class="menu">
+                <li><a href="#"><img src="/img/noti.svg"></a>
+                    <ul>
+                        <li><a href="#">
+                                <section class="container-not">
+                                    <div id="img"></div>
+                                    <h2>A data do evento que você salvou esta chegando!</h2>
+                                </section>
+                            </a></li>
+
+                        <li><a href="#">
+                                <section class="container-not">
+                                    <div id="img2"></div>
+                                    <h2>A data do evento que você salvou esta chegando!</h2>
+                                </section>
+                            </a></li>
+
+                        <li><a href="#">
+                                <section class="container-not">
+                                    <div id="img3"></div>
+                                    <h2>A data do evento que você salvou esta chegando!</h2>
+                                </section>
+                            </a></li>
+
+                        <li><a href="#">
+                                <section class="container-not">
+                                    <div id="img4"></div>
+                                    <h2>A data do evento que você salvou esta chegando!</h2>
+                                </section>
+                            </a></li>
+                    </ul>
+                </li>
+            </section>
+        </ul>
+    </nav>
+
+    <main>
+        <img id="banner" src="/img/img-banner-contato.jpg">
+        <h1>Fale conosco</h1>
+
+        <form method="get" action="envio_dados.php">
+            <div class="box">
+                <article id="email">
+                    <h3>Seu e-mail</h3>
+                    <input type="text" name="email" placeholder="Digite seu e-mail" required>
+                </article>
+
+                <section class="drop-problema">
+                    <select name="problema" required>
+                        <option value="" disabled selected hidden>Selecione o problema</option>
+                        <option value="usability-problem">Problemas na usabilidade do site</option>
+                        <option value="event">Eventos</option>
+                        <option value="error">Relatar um erro</option>
+                        <option value="difficult-login">Dificuldade para logar na conta</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </section>
+
+                    <article id="msg">
+                        <h3>Deixe sua mensagem</h3>
+                        <textarea placeholder="Escreva sua mensagem, dúvida ou feedback aqui" required></textarea>
+                    </article>
+            </div>
+
+            <input id="btn-enviar" type="submit" name="enviar" value="Enviar">  
+        </form>
+    </main>
+
+
+    <footer>
+        <div id="container-footer">
+
+            <section class="part-1">
+                <article>
+                    <h2>SUPORTE</h2>
+                    <a href="/html/contato.html">Contato</a>
+                </article>
+
+                <article>
+                    <h2>RECURSOS</h2>
+                    <a href="">Avisos de segurança</a>
+                </article>
+
+                <article>
+                    <h2>SOBRE</h2>
+                    <a href="/html/sobre.html">O que fazemos</a>
+                </article>
+            </section>
+
+            <img src="/img/logo 1-svg.svg">
+
+            <section class="part-2">
+                <article>
+                    <span>©2023. FlowFast. Todos os Direitos Reservados.</span>
+                    <span>Designed by Gustavo de Castro Lazzaretti Porto. 2023. </span>
+                </article>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

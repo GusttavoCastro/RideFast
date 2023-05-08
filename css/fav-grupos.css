@@ -1,0 +1,528 @@
+body {
+    background-color: #161414;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Clinton';
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #D69A27;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 24, 28);
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+}
+
+header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 60px;
+}
+
+#logo {
+    font-family: 'FORMULA-A';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 14px;
+    /* identical to box height, or 29% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #D69A27;
+}
+
+nav {
+    position: relative;
+    top: 110px;
+    height: 96px;
+    border-top: 1px solid #ddd4d478;
+}
+
+/* Left Options */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    padding: 14px 16px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #DAD5D5;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.menu {
+    position: relative;
+    list-style: none;
+    float: right;
+    font-size: 12px;
+    margin: 0;
+    padding-right: 30px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* SUBMENU */
+.menu li ul {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #2d2828;
+    border-radius: 10px;
+    display: none;
+    margin: 0;
+    padding-left: 15px;
+    width: 360px;
+    height: 420px;
+    z-index: 10;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+}
+
+.container-not {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 5px;
+    gap: 8px;
+
+    width: 290px;
+    height: 75px;
+
+    /* stoke */
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(197, 173, 173, 0.23);
+}
+
+#img {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://i.ytimg.com/vi/mnEOywN-xGU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCa5v68WmD8_VNxZ7X32Wes6Rw8mw);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img2 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://www.yamaha-racing.com.br/wp-content/uploads/2023/03/Eli-Tomac-7-Arlington-Align-Media.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img3 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://www.mx1.com.br/storage/blog/header/2LU6_mundial-de-hard-enduro-2021-wess-mx1@original.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#img4 {
+    position: absolute;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: url(https://img.redbull.com/images/c_crop,x_679,y_0,h_1467,w_1100/c_fill,w_400,h_540/q_auto:low,f_auto/redbullcom/2022/3/27/in5n3h7gyweektxjnf5z/uci-mtb-dh-world-cup-lourdes-jackson-goldstone);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.container-not h2 {
+    position: absolute;
+    padding-left: 90px;
+    width: 230px;
+    height: 36px;
+    color: white;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    letter-spacing: 1px;
+}
+
+
+/* MAIN */
+.container-profile {
+    box-sizing: border-box;
+    position: absolute;
+    width: 534px;
+    height: 616px;
+    left: 0px;
+    top: 283px;
+
+    /* stoke */
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: rgba(197, 173, 173, 0.23);
+    border-radius: 10px;
+}
+
+#profile-img {
+    background: url(/img/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    left: 177px;
+    top: 96px;
+    border-radius: 100px;
+}
+
+.container-profile h2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+
+.container-profile h4 {
+    position: relative;
+    display: flex;
+    top: 90px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    color: rgba(174, 150, 150, 0.72);
+}
+
+#config {
+    position: relative;
+    display: flex;
+    top: 130px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#config a{
+    text-decoration: none;
+}
+
+#config a:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.container-profile span {
+    position: relative;
+    font-weight: 400;
+    bottom: 2px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin-left: 12px;
+    /* neutral */
+    color: rgba(174, 150, 150, 0.72);
+}
+
+.favoritos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 0px 54px;
+    gap: 27px;
+
+    position: absolute;
+    width: 977px;
+    height: 127px;
+    left: 534px;
+    top: 301px;
+
+    /* stoke */
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(197, 173, 173, 0.23);
+}
+
+.favoritos h2 {
+    position: relative;
+    bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.favoritos ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.favoritos ul li {
+    float: left;
+    position: relative;
+    bottom: 40px;
+    right: 25px;
+}
+
+.favoritos ul li a {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(174, 150, 150, 0.72);
+    font-size: 16px;
+}
+
+.favoritos ul li a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#local{
+    color: #D69A27;
+}
+
+.esportes {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 42px;
+
+position: absolute;
+width: 578px;
+height: 396px;
+left: 579px;
+top: 450px;
+
+}
+
+.esportes a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cards {
+    width: 268px;
+    height: 396px;
+    border-radius: 15px;
+    margin: 0;
+    background: #a5e90783;
+    background-size: cover;
+    background-position: center;
+}
+
+.cards:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.cards h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+    text-align: center;
+    padding-top: 150px;
+    color: #FFFFFF;
+
+}
+
+.cards img{
+    position: relative;
+    left: 230px;
+    top: 20px;
+}
+
+.img-1 {
+    background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2021/2/22/zqpp5f0ep3g2cxnbfwdb/uci-world-cup-maribor-hero-art');
+}
+
+.img-2 {
+    background-image: url('https://www.motonline.com.br/noticia/wp-content/uploads/2022/03/JetroSalazar_brasileirodemotocross_7etapa_creditoidariocafe_mundopress_8811-1024x682-1.jpg');
+}
+
+
+/* FOOTER */
+footer {
+    /* FOOTER POSITION */
+    display: flex;
+    height: 280px;
+    position: absolute;
+    top: 900px;
+    background: #131618;
+}
+
+#container-footer {
+    width: 100%;
+    padding: 0px;
+}
+
+.part-1 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 20px;
+    position: absolute;
+    left: 51px;
+}
+
+.part-1 h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #F1F1F1;
+}
+
+.part-1 a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    width: auto;
+    letter-spacing: 0.24px;
+
+    color: #F1F1F1;
+
+}
+
+.part-1 a:hover {
+    color: rgb(255, 230, 0);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#container-footer img {
+    position: absolute;
+    right: 70px;
+    margin-top: 20px;
+}
+
+/* PARTE DE BAIXO DO FOOTER */
+.part-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 220px;
+
+    width: 1512px;
+    height: 60px;
+
+    background: #000000;
+}
+
+.part-2 article {
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+
+    position: absolute;
+    left: 470px;
+    top: 20px;
+}
+
+.part-2 span {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+    line-height: 18px;
+
+    color: #F1F1F1;
+}
